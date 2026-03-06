@@ -22,8 +22,8 @@ jobs:
     - name: Install node modules
       run: npm install
     - name: Start the BackEnd
-      run: npm run start-be
+      run: npm run start-be &
     - name: Start the FrontEnd
-      run: npm run start-fe
+      run: npm run start-fe &
     - name: Run Tests
       run: npm run test
